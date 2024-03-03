@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pharmacy-front/static/css/main.d7444c68.css",
+    "main.js": "/pharmacy-front/static/js/main.7d82cd6a.js",
+    "index.html": "/pharmacy-front/index.html",
+    "main.d7444c68.css.map": "/pharmacy-front/static/css/main.d7444c68.css.map",
+    "main.7d82cd6a.js.map": "/pharmacy-front/static/js/main.7d82cd6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7444c68.css",
+    "static/js/main.7d82cd6a.js"
+  ]
+}
