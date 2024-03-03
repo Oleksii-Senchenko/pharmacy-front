@@ -46,14 +46,12 @@ const Footer = () => {
             </Advertising>
           </Item>
           <Item>
-            <Advertising href="https://oleksii-senchenko.github.io/my-cv/">
+            <Advertising href="https://www.linkedin.com/in/oleksii-senchenko-601759292/">
               Linkidin
             </Advertising>
           </Item>
           <Item>
-            <Advertising href="https://www.linkedin.com/in/oleksii-senchenko-601759292/">
-              Telegram
-            </Advertising>
+            <Advertising href="https://t.me/maverick359">Telegram</Advertising>
           </Item>
         </List>
       </Containers>
@@ -62,7 +60,7 @@ const Footer = () => {
           <Price>Total: {total}$</Price>
           <Btn
             onClick={() => {
-              handleSubmit()
+              handleSubmit();
             }}
           >
             Submit
