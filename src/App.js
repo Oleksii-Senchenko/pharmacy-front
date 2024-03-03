@@ -1,13 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Home from "./components/Home/Home";
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getAll, getPharmacies } from "./redux/pharmacy/operations";
-import ShopingCard from "./components/Basket/Basket";
-import Basket from "./components/Basket/Basket";
-import Footer from "./components/Footer/Footer";
-
+const Home = lazy(()=> import("./components/Home/Home"))
+const Basket = lazy(()=> import("./components/Basket/Basket"))
 function App() {
   const dispatch = useDispatch();
 

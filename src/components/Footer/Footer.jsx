@@ -41,7 +41,7 @@ const Footer = () => {
             </Advertising>
           </Item>
 
-          
+
           <Item>
             <Advertising href="https://github.com/Oleksii-Senchenko">
               GitHub
@@ -55,9 +55,13 @@ const Footer = () => {
               Linkidin
             </Advertising>
           </Item>
+
+
           <Item>
             <Advertising href="https://t.me/maverick359">Telegram</Advertising>
           </Item>
+
+          
         </List>
       </Containers>
       {isOnBucketPage && (
