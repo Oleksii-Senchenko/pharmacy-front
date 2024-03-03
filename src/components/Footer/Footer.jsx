@@ -62,7 +62,7 @@ const Footer = () => {
           <Price>Total: {total}$</Price>
           <Btn
             onClick={() => {
-              handleSubmit();
+              handleSubmit()
             }}
           >
             Submit
