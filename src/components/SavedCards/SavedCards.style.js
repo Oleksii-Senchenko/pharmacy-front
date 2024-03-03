@@ -3,12 +3,11 @@ import styled from "styled-components";
 export const ShopContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: auto;
+  margin-bottom: auto;
   gap: 30px;
   width: 780px;
-  height: 600px;
+  height: 610px;
   overflow-x: hidden;
-
   border: 1px solid #ccc;
   padding: 15px 50px;
   border-radius: 10px;
@@ -28,17 +27,16 @@ export const ListOfShop = styled.ul`
 
 export const ItemOfShop = styled.li`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 50px;
+  padding: 10px 15px;
   width: 350px;
-  min-width: calc((100% - 3 * 20px) / 2);
+  min-width: calc((100% - 3 * 20px) / 1);
   color: #458546;
   font-size: 25px;
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: auto;
   margin-bottom: 10px;
-
   &:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
     transition-duration: 400ms;
@@ -46,7 +44,7 @@ export const ItemOfShop = styled.li`
 `;
 
 export const Image = styled.img`
-  width: 100%;
+  width: 300px;
   border: 1px solid #ccc;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -60,7 +58,8 @@ export const Name = styled.p`
 `;
 export const Desckription = styled.div`
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
   gap: 40px;
   margin-bottom: 25px;
 `;

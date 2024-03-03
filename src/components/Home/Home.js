@@ -1,13 +1,17 @@
 import React from "react";
 import Shops from "../Shops/Shops";
 import Cards from "../Cards/Cards";
-import { HomeCotainer } from "./Home.styled";
+import { HomeCotainer, MainFilling } from "./Home.styled";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
     <HomeCotainer>
-      <Shops />
-      <Cards />
+      <MainFilling>
+        <Shops />
+        <Cards />
+      </MainFilling>
+      <Footer />
     </HomeCotainer>
   );
 };

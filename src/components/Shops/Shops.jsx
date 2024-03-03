@@ -4,6 +4,7 @@ import {
   ListOfShop,
   ShopContainer,
   SearchBtn,
+  Title,
 } from "./Shops.styled";
 import { useDispatch, useSelector } from "react-redux";
 import { getMedecine } from "../../redux/pharmacy/operations";
@@ -18,7 +19,7 @@ const Shops = () => {
 
   return (
     <ShopContainer>
-      <h2>Shops:</h2>
+      <Title>Shops:</Title>
       <ListOfShop>
         {shops.map((shop) => (
           <ItemOfShop key={shop._id}>

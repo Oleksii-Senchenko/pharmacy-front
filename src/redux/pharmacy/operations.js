@@ -19,7 +19,7 @@ export const getMedecine = createAsyncThunk(
   async (id, thunkAPI) => {
     try {
       const res = await axios.get(`/pharmacy/${id}`);
-      console.log(res.data);
+
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -31,7 +31,7 @@ export const getAll = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const res = await axios.get(`/pharmacy/all`);
-      console.log(res.data);
+
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);

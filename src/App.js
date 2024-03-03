@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { getAll, getPharmacies } from "./redux/pharmacy/operations";
 import ShopingCard from "./components/Basket/Basket";
 import Basket from "./components/Basket/Basket";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const dispatch = useDispatch();
