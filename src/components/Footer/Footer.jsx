@@ -40,15 +40,16 @@ const Footer = () => {
               CV
             </Advertising>
           </Item>
+
+          
           <Item>
             <Advertising href="https://github.com/Oleksii-Senchenko">
               GitHub
             </Advertising>
-          </Item><Item>
-            <Advertising href="https://github.com/Oleksii-Senchenko">
-              GitHub
-            </Advertising>
           </Item>
+
+
+
           <Item>
             <Advertising href="https://www.linkedin.com/in/oleksii-senchenko-601759292/">
               Linkidin
