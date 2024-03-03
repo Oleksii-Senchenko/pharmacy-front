@@ -41,6 +41,11 @@ const Footer = () => {
             </Advertising>
           </Item>
           <Item>
+            <Advertising href="https://github.com/Oleksii-Senchenko">
+              GitHub
+            </Advertising>
+          </Item>
+          <Item>
             <Advertising href="https://oleksii-senchenko.github.io/my-cv/">
               Linkidin
             </Advertising>
