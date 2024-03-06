@@ -1,13 +1,19 @@
 {
   "files": {
     "main.css": "/pharmacy-front/static/css/main.d7444c68.css",
-    "main.js": "/pharmacy-front/static/js/main.7d82cd6a.js",
+    "main.js": "/pharmacy-front/static/js/main.74991430.js",
+    "static/js/4.70756ac1.chunk.js": "/pharmacy-front/static/js/4.70756ac1.chunk.js",
+    "static/js/596.87016685.chunk.js": "/pharmacy-front/static/js/596.87016685.chunk.js",
+    "static/js/726.165729e2.chunk.js": "/pharmacy-front/static/js/726.165729e2.chunk.js",
     "index.html": "/pharmacy-front/index.html",
     "main.d7444c68.css.map": "/pharmacy-front/static/css/main.d7444c68.css.map",
-    "main.7d82cd6a.js.map": "/pharmacy-front/static/js/main.7d82cd6a.js.map"
+    "main.74991430.js.map": "/pharmacy-front/static/js/main.74991430.js.map",
+    "4.70756ac1.chunk.js.map": "/pharmacy-front/static/js/4.70756ac1.chunk.js.map",
+    "596.87016685.chunk.js.map": "/pharmacy-front/static/js/596.87016685.chunk.js.map",
+    "726.165729e2.chunk.js.map": "/pharmacy-front/static/js/726.165729e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7444c68.css",
-    "static/js/main.7d82cd6a.js"
+    "static/js/main.74991430.js"
   ]
 }
