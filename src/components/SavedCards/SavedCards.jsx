@@ -8,7 +8,7 @@ import {
   Name,
   ShopContainer,
 } from "./SavedCards.style";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { takeValue } from "../../redux/medick/operations";
 
 const SavedCards = () => {
