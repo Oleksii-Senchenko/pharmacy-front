@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getAll, getMedecine, getPharmacies, setNew } from "./operations";
+import { getAll, getMedecine, getPharmacies } from "./operations";
 
 export const pharmacySlice = createSlice({
   name: "pharmacy",
