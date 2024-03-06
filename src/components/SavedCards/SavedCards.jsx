@@ -14,7 +14,6 @@ import { takeValue } from "../../redux/medick/operations";
 const SavedCards = () => {
   const dispatch = useDispatch();
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-  const total = useSelector((state) => state.medick.total);
   const [medicks, setMedicks] = useState(
     cartItems.map((item) => ({ ...item, count: 1 }))
   );
