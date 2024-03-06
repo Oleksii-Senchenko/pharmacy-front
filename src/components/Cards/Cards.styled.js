@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const ShopContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  justify-content: ${(props) => (props.empty ? "center" : "flex-start")};
+  align-items: ${(props) => (props.empty ? "center" : "flex-start")};
+
   margin-top: auto;
   gap: 30px;
   width: 780px;
@@ -16,6 +20,32 @@ export const ShopContainer = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
+export const CustomSelect = styled.select`
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+`;
+export const CustomOption = styled.option`
+  padding: 8px;
+  font-size: 16px;
+  background-color: #ccc;
+  color: #333;
+  &:hover {
+    background-color: #fff;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  align-self: flex-end;
+`;
 export const Title = styled.h2``;
 
 export const ListOfShop = styled.ul`
@@ -40,7 +70,7 @@ export const ItemOfShop = styled.li`
   margin-bottom: 10px;
 
   &:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition-duration: 400ms;
   }
 `;

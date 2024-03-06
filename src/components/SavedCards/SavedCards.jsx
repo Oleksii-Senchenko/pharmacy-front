@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
+  Attention,
   Desckription,
   Image,
   ItemOfShop,
@@ -33,34 +34,38 @@ const SavedCards = () => {
 
   useEffect(() => {
     dispatch(takeValue(calculateTotal()));
-    if (total === 0) {
-      localStorage.setItem("cart", JSON.stringify(null));
-    }
+    // if (total === 0) {
+    //   localStorage.setItem("cart", JSON.stringify(null));
+    // }
   });
 
   return (
     <ShopContainer>
-      <ListOfShop>
-        {medicks.map((medic, index) => (
-          <ItemOfShop key={medic._id}>
-            <Image src={medic.image} alt="qwe" />
+      {medicks.length === 0 ? (
+        <Attention>Your backet is empty 🙂</Attention>
+      ) : (
+        <ListOfShop>
+          {medicks.map((medic, index) => (
+            <ItemOfShop key={medic._id}>
+              <Image src={medic.image} alt="qwe" />
 
-            <Desckription>
-              <Name>{medic.name}</Name>
-              <p>Price: {medic.price}$</p>
-              <form action="">
-                <input
-                  type="number"
-                  value={medic.count}
-                  onChange={(e) => {
-                    handleCountChange(e.target.value, index);
-                  }}
-                />
-              </form>
-            </Desckription>
-          </ItemOfShop>
-        ))}
-      </ListOfShop>
+              <Desckription>
+                <Name>{medic.name}</Name>
+                <p>Price: {medic.price}$</p>
+                <form action="">
+                  <input
+                    type="number"
+                    value={medic.count}
+                    onChange={(e) => {
+                      handleCountChange(e.target.value, index);
+                    }}
+                  />
+                </form>
+              </Desckription>
+            </ItemOfShop>
+          ))}
+        </ListOfShop>
+      )}
     </ShopContainer>
   );
 };

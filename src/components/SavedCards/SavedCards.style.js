@@ -17,6 +17,12 @@ export const ShopContainer = styled.div`
 
 export const Title = styled.h2``;
 
+export const Attention = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+`;
+
 export const ListOfShop = styled.ul`
   display: flex;
   align-items: center;
@@ -38,7 +44,7 @@ export const ItemOfShop = styled.li`
   margin: auto;
   margin-bottom: 10px;
   &:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition-duration: 400ms;
   }
 `;

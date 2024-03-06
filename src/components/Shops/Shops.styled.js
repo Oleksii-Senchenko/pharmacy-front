@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const ShopContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+
+  justify-content: ${props => props.empty ? 'center' : 'flex-start'};
+
+
+
   align-items: center;
   gap: 30px;
   margin-top: auto;
